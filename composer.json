@@ -1,18 +1,11 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "selden1992/phalcon-app",
+    "description": "The phalcon-app Framework.",
+    "keywords": ["framework", "phalcon-app","phalcon"],
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.6.4",
-        "laravel/framework": "5.4.*",
-        "laravel/tinker": "~1.0"
-    },
-    "require-dev": {
-        "fzaninotto/faker": "~1.4",
-        "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.7"
+        "php": ">=5.6.4"
     },
     "autoload": {
         "classmap": [
@@ -33,18 +26,6 @@
         ],
         "post-create-project-cmd": [
             "php artisan key:generate"
-        ],
-        "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
-        ],
-        "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
         ]
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true
     }
 }
